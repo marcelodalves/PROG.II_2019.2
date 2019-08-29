@@ -3,7 +3,6 @@
 
 void lermatriz(); 
 int simetrica();
-void mostra();
 
 int main(){
 
