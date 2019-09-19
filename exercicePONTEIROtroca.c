@@ -16,7 +16,7 @@ int main(){
 	
 	printf("\n||||||//INVERSAO\\||||||\n");
 	
-	aux = *pa; //Nao é possivel inverter direto, com *pa = *pb e *pb = *pa! Ai se cria uma variavel aux pra inverter
+	aux = *pa; //Nao é possivel inverter direto, com *pa = *pb e *pb = *pa! Ai se cria uma variavel aux pra ajudar na inversão
 	*pa = *pb;
 	*pb = aux;
 		
