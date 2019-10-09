@@ -9,6 +9,7 @@ Escreva outra função que exiba a frase descriptografada.
 #include <string.h>
 
 void embaralho(char *letra, int n, int tam);
+void desembaralho(char *letra, int n, int tam);
 int main(){
 	
 	int n, tam;
@@ -23,6 +24,7 @@ int main(){
 	tam = strlen(txt);
 		
 	embaralho(txt,n,tam);
+	desembaralho(txt,n,tam);
 	
 	return 0;
 }
@@ -32,5 +34,12 @@ void embaralho(char *letra, int n, int tam){
  for (i=0; i<tam; i++){
   	letra[i] +=n;
     }
-    printf("%s",letra);
+    printf("\nCRIPTOGRAFADA: %s\n",letra);
+}
+void desembaralho(char *letra, int n, int tam){
+	int i;
+	for (i=0;i<tam; i++){
+		letra[i] -= n;
+	}
+	printf("\nDESCRIPTOGRAFADA: %s\n",letra);
 }
