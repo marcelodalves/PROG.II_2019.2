@@ -12,20 +12,18 @@ int main(){
 	
 	int mat[a][b];
 	
-	for(i=0; i<a; i++)
-    {
-        for(j=0;j<b;j++)
-        {
-            printf("\nEntre com o elemento [%d, %d]:", i+1,j+1);
-            scanf("%d", &mat[i][j]);
-        }
-    }
+	for(i=0; i<a; i++){
+        	for(j=0;j<b;j++){
+            		printf("\nEntre com o elemento [%d, %d]:", i+1,j+1);
+            		scanf("%d", &mat[i][j]);
+        			}
+    			 }
     
     for (i=0;i<a;i++){
 		printf("\n");
-		for (j=0; j<b;j++){
-			printf("%d ",mat[i][j]);
-		}
+	for (j=0; j<b;j++){
+		printf("%d ",mat[i][j]);
+			  }
 		printf("");
 	}
 	
@@ -35,9 +33,9 @@ int main(){
 	  
 		for (i=0;i<a;i++){
 		printf("\n");
-		for (j=0; j<b;j++){
+			for (j=0; j<b;j++){
 			printf("%d ",mat[i][j]);
-		}
+					   }
 		printf("");
 	}
 	
